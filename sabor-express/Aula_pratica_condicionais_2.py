@@ -34,12 +34,40 @@ for i in range(10, 0, -1):
 """
 
 # 5 - Solicite ao usuário um número e, em seguida, utilize um loop for para imprimir a tabuada desse número, indo de 1 a 10.
+"""
 numero = int(input('Digite um número: '))
 
 for i in range(0, 11, 1):
     resultado = numero * i
     print(f'{numero} x {i} = {resultado} ')
+"""
 
 # 6 - Crie uma lista de números e utilize um loop for para calcular a soma de todos os elementos. Utilize um bloco try-except para lidar com possíveis exceções.
+"""
+lista_numeros = [10, 5, 8, 3, 7]
+soma = 0
+
+try:
+    for numero in lista_numeros:
+        soma += numero
+    print(f"Soma dos elementos: {soma}")
+except Exception as e:
+    print(f"Ocorreu um erro: {e}")
+"""
 
 # 7 - Construa um código que calcule a média dos valores em uma lista. Utilize um bloco try-except para lidar com a divisão por zero, caso a lista esteja vazia.
+"""
+lista_valores = [15, 20, 25, 30, 60, 50, 33]
+soma_valores = 0
+
+try:
+    for valor in lista_valores:
+        soma_valores += valor
+    media = soma_valores / len(lista_valores)
+    print(f"Média dos valores: {media}")
+except ZeroDivisionError:
+    print("A lista está vazia, não é possível calcular a média.")
+except Exception as e:
+    print(f"Ocorreu um erro: {e}")
+
+"""
