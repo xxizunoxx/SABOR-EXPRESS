@@ -92,12 +92,12 @@ def listar_restaurantes():
 
     exibir_subtitulo('Lista de restaurantes cadastrados')
 
-    print(f'* {'Nome do restaurante'.ljust(20)} * {'Categoria'.ljust(20)} * {'Status'}')
+    print(f'* {'Nome do restaurante'.ljust(22)} * {'Categoria'.ljust(20)} * {'Status'}')
     for x in restaurantes:
         nome = x['nome']
         categoria = x['categoria']
         status = 'ativado' if  x['ativo'] else 'desativado'
-        print(f'- {nome.ljust(20)} | {categoria.ljust(20)} | {status}')
+        print(f'- {nome.ljust(22)} | {categoria.ljust(20)} | {status}')
     voltar_ao_menu_principal()
 
 def alternar_estado_restaurante():
