@@ -1,4 +1,4 @@
-'''class ContaBancaria:
+class ContaBancaria:
     contas = []
 
     def __init__(self, titular, saldo):
@@ -30,7 +30,7 @@ conta_caue = ContaBancaria('Cauê Moreno', 'R$ 10.000,00')
 ContaBancaria.ativar_conta(conta_caue)
 
 ContaBancaria.listar_contas()
-'''
+
 
 # 1) Crie uma classe chamada `ContaBancaria` com um construtor que aceita os parâmetros titular e saldo. Inicie o atributo ativo como False por padrão.
 class ContaBancaria:
