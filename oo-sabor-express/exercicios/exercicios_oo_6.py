@@ -62,3 +62,14 @@ print(carro3)
 print(moto1)
 print(moto2)
 print(moto3)
+
+
+"""
+Toyota Corolla - Portas: 4 - Status: desligado
+Honda Civic - Portas: 2 - Status: desligado
+Ford Fusion - Portas: 4 - Status: desligado
+
+Harley-Davidson Street 750 - Tipo: Esportiva - Status: desligado
+Honda CB 500 - Tipo: Casual - Status: desligado
+Yamaha MT-09 - Tipo: Esportiva - Status: desligado
+"""
