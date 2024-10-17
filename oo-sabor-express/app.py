@@ -1,19 +1,19 @@
 from modelos.restaurante import Restaurante
+from modelos.cardapio.bebida import Bebida
+from modelos.cardapio.prato import Prato
+
 
 restaurante_gigante = Restaurante('Gigante Nordestino', 'Nordestina')
-restaurante_gigante.receber_avaliacao('Caique', 9)
-restaurante_gigante.receber_avaliacao('Natalia', 10)
-restaurante_gigante.receber_avaliacao('Caue', 8)
+bebida_suco = Bebida('Suco de Manga', 5.0, 'Grande')
+prato_xiquexique = Prato('Xique Xique', 190.00, 'Risoto de camarão')
 restaurante_outback = Restaurante('Outback', 'Australiana')
-restaurante_outback.receber_avaliacao('Jonatan', 6)
-restaurante_outback.receber_avaliacao('João', 4)
-restaurante_outback.receber_avaliacao('Rogerio', 9)
 restaurante_mcdonalds = Restaurante('Mcdonalds', 'Fast Food')
 
 restaurante_outback.alternar_estado()
 
 def main():
-    Restaurante.listar_restaurantes()
+    print(bebida_suco)
+    print(prato_xiquexique)
 
 if __name__ == '__main__':
     main()
